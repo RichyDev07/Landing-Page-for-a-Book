@@ -13,12 +13,12 @@
     <header class="header">
         <h2 class="header_title">
             <span>Matt Rodley</span>
-            <i class="fa fa-paper-plane"></i>
+            <i class="fa fa-paper-plane plane-ico"></i>
      
 
 
         </h2>
-        <nav class="header_navigation">
+        <nav id="header-navigation" class="header_navigation">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Books</a>
@@ -26,8 +26,43 @@
             <a href="#">Contact</a>
 
         </nav>
-        <i class="fa fa-bars menu-ico"></i>
-        <i class="fa fa-times-circle close-ico"></i>
+        <i onclick="taggleMenu('block')" class="fa fa-bars menu-ico"></i>
+        <i onclick="taggleMenu('none')" id="close-ico" class="fa fa-times-circle close-ico"></i>
     </header>
+
+    <div class="wrapper">
+        <aside>
+            <div class="book">
+                <div class="book_circle">
+                    <img src="assets/images/book.jpg" alt="book">
+
+                </div>
+            </div>
+        </aside>
+        <main>
+            <h1>
+Innovation happens
+when people are 
+free to think,speculate
+and experiment
+            </h1>
+
+            <p>
+                Ridley's new book, How Innovation Works, 
+                chronicles the history of innovation and 
+                argues that we need to change the way we think about innovation,
+                 to see it as an incremental, 
+                -up, fortuitous process that happens to society 
+                as a direct result of the human habit of exchange.
+            </p>
+            <div class="buttons">
+                <button class="buttons_buy-now">BUY NOW</button>
+                <button class="buttons_read-more">Read more</button>
+
+
+            </div>
+        </main>
+
+    </div>
 </body>
 </html>

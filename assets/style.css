@@ -32,4 +32,199 @@
     justify-content: space-between;
     padding-top: 81px;
     max-width: 1231px;
+    margin: 0 auto;
+    font-family: 'Istok Web';
+    font-weight: bold;
+    
+    
 }
+.header_title{
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+.header span{
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 10px;
+    font-style: bold;
+    font-family: sans-serif;
+    color: var(--primary-color);
+
+}
+.header .plane-ico{
+    color: var(--accent-color);
+
+}
+.header .menu-ico,
+.header .close-ico{
+    display: none;
+}
+.header_navigation{
+    text-align: center;
+    display: flex;
+    height: 52px;
+}
+.header_navigation a{
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.wrapper{
+    display: flex;
+
+}
+.wrapper aside{
+    width: 50%;
+    margin-top: 46px;
+    position: relative;
+}
+.book_circle{
+    width: 785px;
+    height: 785px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.book{
+    height: 785px;
+    margin-bottom: 55px;
+
+}
+main{
+    width: 50%;
+    margin-top: 91px;
+    max-width: 571px;
+}
+main h1{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 14px;
+
+    
+}
+main p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-bottom: 50px;
+    color: black;
+
+
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.buttons button{
+    border: none;
+    border-radius: 50px;
+    padding: 16px 47px;
+}
+.buttons_buy-now{
+    background-color: var(--accent-color);
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+
+
+
+}
+.buttons_read-more{
+    background-color: var(--primary-color);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    font-family: sans-serif;
+
+}
+@media screen and  (max-width: 1400px){
+    .header{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .header_navigation{
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+    }
+    .header_navigation a{
+        color: var(--accent-color);
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .header .menu-ico{
+        display: block;
+        font-size: 30px;
+        line-height: 45px;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+    .header .close-ico{
+        display: none;
+        z-index: 1;
+        font-size: 30px;
+        top: 20px;
+        right: 20px;
+        color: var(--accent-color);
+        cursor: pointer;
+
+
+    }
+    .wrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper main,
+    .wrapper aside{
+        width: 90%;
+
+    }
+    .book_circle img{
+        max-width: 150px;
+    }
+    .book_circle{
+        position: inherit;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .book{
+        height: 300px;
+        margin-top: 0;
+    
+    }
+    main h1{
+        font-size: 24px;
+    }
+    main p{
+        font-size: 16px;
+    }
+    .buttons_buy-now,
+    .buttons_read-more{
+        font-size: 16px;
+    }
+    .buttons button{
+        padding: 16px 25px;
+    }
+
+}
+    
